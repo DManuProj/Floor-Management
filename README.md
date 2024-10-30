@@ -1,6 +1,6 @@
 # Floor Management
 
-A brief description of your project and what it does.
+Drag and drop  functionality with aranging the floor of the room
 
 ## Table of Contents
 
