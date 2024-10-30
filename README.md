@@ -1,58 +1,60 @@
-Project Title
+# Project Title
 
 A brief description of your project and what it does.
-Table of Contents
 
-    Technologies
-    Getting Started
-    Running the Application
-    Frontend
-    Backend
-    API Endpoints
-    License
+## Table of Contents
 
-Technologies
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Running the Application](#running-the-application)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
 
-    React (Vite)
-    Node.js
-    Express
-    MongoDB (or any other database you're using)
-    (Add any other technologies you are using)
 
-Getting Started
-Prerequisites
+## Technologies
+
+- React (Vite)
+- Node.js
+- Express
+- MongoDB 
+- Material UI
+- React-Konva (drag & drop)
+- Redux-Toolkit
+- React-Router
+  
+
+## Getting Started
+
+### Prerequisites
 
 Make sure you have the following installed:
 
-    Node.js (v14 or higher)
-    npm (comes with Node.js)
-    (Any other prerequisites)
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm (comes with Node.js)
 
-Clone the Repository
 
-git clone <repository-url>
-cd <repository-folder>
 
-Running the Application
-Frontend
+## Drag-and-Drop Mechanism
+- The drag-and-drop functionality in this application is implemented using the react-konva library, which provides a robust way to handle canvas elements.
 
-1.Navigate to the frontend directory:
-cd frontend
+- Event Handling: The application captures drag events using the onDragEnd handler. The position of the dragged element is obtained through getPointerPosition(), ensuring precise placement.
 
-2.Install the dependencies:
-npm install
+- Coordinate System: A defined work area allows for adjusting the pointer's position, preventing elements from being placed outside the intended layout.
 
-3.Start the Vite development server:
+- State Management: The positions of elements are managed through React's state, ensuring that the UI updates immediately in response to user interactions.
 
-npm run dev
+##Justification for the Approach
 
-Backend
+This approach enhances user experience by allowing intuitive positioning of elements while maintaining accuracy. 
+It also leverages React's capabilities for efficient state management and modularity, making future enhancements easier.
 
-1.Navigate to the backend directory:
-cd ../backend
+## Validation of Libraries and Tools
 
-2.Install the dependencies:
-npm install
+- React (Vite): Chosen for its fast development server and optimized build process, enabling rapid prototyping and efficient performance.
+- Node.js and Express: Provide a reliable backend framework, facilitating RESTful API creation and handling asynchronous requests seamlessly.
+- MongoDB: Utilized for its flexibility and scalability in managing data, making it a great fit for applications with varying data structures.
+- Material UI: Offers a comprehensive set of pre-designed components that adhere to Material Design principles, ensuring a consistent and modern UI.
+- React-Konva: Ideal for handling canvas-based elements and providing drag-and-drop functionality in a straightforward manner.
+- Redux Toolkit: Simplifies state management, making it easier to manage complex application states and enhance performance.
+- React Router: Essential for managing navigation and routing in a single-page application, improving the user experience.
 
-3.Start the Express server:
-The backend will typically be available at http://localhost:5000. (on localhost)
